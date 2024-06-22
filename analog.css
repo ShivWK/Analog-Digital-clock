@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clockContainer{
+    background-image:url('analog-clock.jpg');
+    height: 40vw;
+    width: 40vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+#hour, #minute, #second{  
+    position: absolute;
+    border-radius: 10px;
+}
+
+#hour{
+    top: 23.5%;
+    left: 48.9%;
+    height: 26%;
+    width: 2%;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    background-color: rgb(20, 20, 20);
+}
+#minute{
+    top: 18.5%;
+    left: 49%;
+    height: 31%;
+    width: 1.8%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    background-color: rgb(92, 231, 37);
+}
+#second{
+    top: 13.5%;
+    left: 49.5%;
+    height: 36%;
+    width: 1%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    background-color: rgb(207, 62, 62);
+    transition: transform 0.05s;
+    
+}
